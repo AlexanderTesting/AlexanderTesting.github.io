@@ -29,10 +29,10 @@ body {
     transform-style: preserve-3d;
     transition: transform 1s;
 }
-
+/*
 .card-wrapper:hover .card {
     transform: rotateY(180deg);
-}
+}*/
 
 .card-front,
 .card-back {
