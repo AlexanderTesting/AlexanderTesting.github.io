@@ -17,6 +17,18 @@
     <link rel="stylesheet" href="PresentationStyle.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
+    <script>
+        function copy(element_id) {
+            var aux = document.createElement("div");
+            aux.setAttribute("contentEditable", true);
+            aux.innerHTML = document.getElementById(element_id).innerHTML;
+            aux.setAttribute("onfocus", "document.execCommand('selectAll',false,null)");
+            document.body.appendChild(aux);
+            aux.focus();
+            document.execCommand("copy");
+            document.body.removeChild(aux);
+        }
+    </script>
 
     <title>Alexander Card</title>
 </head>
@@ -68,7 +80,7 @@
                     <div class="scripts right-content">
                         <i class="fa fa-scroll"></i>
                         <div>
-                            <h4>Script</h4>
+                            <h4>Scripts</h4>
                             <p>I know Lua & Discord.js.</p>
                             <p>Learning HTML.</p>
                         </div>
