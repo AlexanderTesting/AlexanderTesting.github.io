@@ -66,11 +66,21 @@ body {
 
 }
 
+
+.left p {
+    margin-left: 20px;
+    position: center;
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: rgb(58, 49, 38);
+}
 .left h4 {
-    margin: 10px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: rgb(121, 103, 77);
+    position: center;
+    margin-top: 4px;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+    color: rgb(58, 49, 38);
 }
 
 .left span {
@@ -115,9 +125,12 @@ body {
 .github {
     padding-left: 15px;
 }
-
+.version{
+    color: black;
+    font-size: 12px;
+}
 .scripts {
-    padding-left: 1px;
+    padding-left: 0px;
 }
 
 .card-back {
