@@ -1,0 +1,10 @@
+@keyframes anim {
+  from{ color: orange;}
+  to {color: white;}
+}
+
+.effect {
+  font-weight: 600;
+  animation-name: anim;
+  animation-duration: 2.5s;
+}

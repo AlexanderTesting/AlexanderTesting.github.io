@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
 }
-
+.notify-success {
+    border: none;
+    background: none;
+    color: red !important;
+}
 body {
     font-family: "Monserrat",sans-serif;
     /*font-family: 'Lobster', cursive;*/
@@ -108,12 +112,12 @@ body {
     padding-left: 30px;
 }
 
-.scripts {
-    padding-left: 20px;
+.github {
+    padding-left: 15px;
 }
 
-.github {
-    padding-left: 10px;
+.scripts {
+    padding-left: 0px;
 }
 
 .card-back {
@@ -131,6 +135,24 @@ body {
     box-shadow: 0 10px 20px rgb(0,0,0, 0.5);
 }
 
+a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(223, 223, 223);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(150,150,150);
+  }
 /*
 .card-wrapper {
     width: 100%;
