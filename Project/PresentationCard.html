@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="PresentationStyle.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
+    <!---->
+    <script>
+        function copy(element_id) {
+            var aux = document.createElement("div");
+            aux.setAttribute("contentEditable", true);
+            aux.innerHTML = document.getElementById(element_id).innerHTML;
+            aux.setAttribute("onfocus", "document.execCommand('selectAll',false,null)");
+            document.body.appendChild(aux);
+            aux.focus();
+            document.execCommand("copy");
+            document.body.removeChild(aux);
+        }
+    </script>
+
+    <title>Alexander Card</title>
+</head>
+
+<body>
+    <div class="card-wrapper">
+        <div class="card">
+            <div class="card-front">
+                <div class="left">
+                    <img src="images/killua.gif" />
+                    <h4>
+                        <span class="Intro">
+                            Made by:
+                        </span>
+                        <span>
+                            <strong>
+                                ❥Al3x#0007
+                            </strong>
+                        </span>
+                    </h4>
+                    <p>
+                        You can click on my discord user to copy it, and click on
+                        <br>my github user to open a tab with my profile.
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="person right-content">
+                        <i class="fas fa-user-tie"></i>
+                        <div>
+                            <h4>Name</h4>
+                            <p>Alexander</p>
+                        </div>
+                    </div>
+                    <div class="discord right-content">
+                        <i class="fab fa-discord"></i>
+                        <div>
+                            <h4>Discord User</h4>
+                            <a id="user" onclick="copy('user')">❥Al3x#0007</a>
+                        </div>
+                    </div>
+                    <div class="github right-content">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub User</h4>
+                            <!--<p>F0XTR0XHACKS</p>-->
+                            <p><a href="https://github.com/FOXTROXHACKS" target="_blank">F0XTR0XHACKS</a></p>
+                        </div>
+                    </div>
+                    <div class="scripts right-content">
+                        <i class="fa fa-scroll"></i>
+                        <div>
+                            <h4>Scripts</h4>
+                            <p>I know Lua & Discord.js.</p>
+                            <p>Learning HTML.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-back">
+                <img src="images/killua.gif" />
+            </div>
+        </div>
+    </div>
+    <p class="version">v0.3<br>12/7/21</p>
+</body>
+
+</html>

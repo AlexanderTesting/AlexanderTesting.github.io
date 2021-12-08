@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <iframe width = "580" height = "335" src = "https://alexandertesting.github.io/WebsiteTest/Card/PresentationCard.html" title = "Alex's Presentation Card" frameborder = "0"></iframe >
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,19 +30,22 @@
       })
     })
   </script>
-  <script>
-    $(document).ready(function () {
-      $('.clipboard').on("click", function () {
-        var message = document.createElement('p');
-        message.classList.add('effect');
-        message.innerHTML = 'URL copied!';
-        this.parentNode.insertBefore(message, this);
-        setTimeout(function () {
-          $(message).remove();
-        }, 2500);
 
+      
+
+  <script>
+      $(document).ready(function () {
+        $('.clipboard').on("click", function () {
+          var message = document.createElement('p');
+          message.classList.add('effect');
+          message.innerHTML = 'URL copied!';
+          this.parentNode.insertBefore(message, this);
+          setTimeout(function () {
+            $(message).remove();
+          }, 2500);
+
+        })
       })
-    })
   </script>
 
 </head>
